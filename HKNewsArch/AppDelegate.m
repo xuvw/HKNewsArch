@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HKNewsCardViewController.h"
+#import "MLTransition.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 启用手势滑屏返回 必须位于构造App UI之前，否则手势返回无效！！！ by heke
+    [MLTransition validatePanPackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
+    
+    HKNewsCardViewController *newsCardVC = [[HKNewsCardViewController alloc] init];
+    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:newsCardVC];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:naviVC];
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

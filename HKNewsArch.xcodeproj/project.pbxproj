@@ -12,7 +12,12 @@
 		AD0C48631C904A030057DD48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C48621C904A030057DD48 /* ViewController.m */; };
 		AD0C48661C904A030057DD48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0C48641C904A030057DD48 /* Main.storyboard */; };
 		AD0C48681C904A030057DD48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0C48671C904A030057DD48 /* Assets.xcassets */; };
-		AD0C486B1C904A030057DD48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0C48691C904A030057DD48 /* LaunchScreen.storyboard */; };
+		AD0C48751C904A690057DD48 /* HKNewsCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C48741C904A690057DD48 /* HKNewsCardViewController.m */; };
+		AD0C487B1C904D270057DD48 /* HKNewsCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C48791C904D270057DD48 /* HKNewsCardCollectionViewCell.m */; };
+		AD0C487C1C904D270057DD48 /* HKNewsCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0C487A1C904D270057DD48 /* HKNewsCardCollectionViewCell.xib */; };
+		AD0C48831C9054270057DD48 /* UIResponder+HKExts.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C48821C9054270057DD48 /* UIResponder+HKExts.m */; };
+		AD0C48861C90558A0057DD48 /* MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C48851C90558A0057DD48 /* MLTransition.m */; };
+		AD0C48891C90575A0057DD48 /* HKCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C48881C90575A0057DD48 /* HKCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +29,18 @@
 		AD0C48621C904A030057DD48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD0C48651C904A030057DD48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD0C48671C904A030057DD48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD0C486A1C904A030057DD48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD0C486C1C904A030057DD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0C48731C904A690057DD48 /* HKNewsCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNewsCardViewController.h; sourceTree = "<group>"; };
+		AD0C48741C904A690057DD48 /* HKNewsCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNewsCardViewController.m; sourceTree = "<group>"; };
+		AD0C48781C904D270057DD48 /* HKNewsCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNewsCardCollectionViewCell.h; sourceTree = "<group>"; };
+		AD0C48791C904D270057DD48 /* HKNewsCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNewsCardCollectionViewCell.m; sourceTree = "<group>"; };
+		AD0C487A1C904D270057DD48 /* HKNewsCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKNewsCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		AD0C48811C9054270057DD48 /* UIResponder+HKExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+HKExts.h"; sourceTree = "<group>"; };
+		AD0C48821C9054270057DD48 /* UIResponder+HKExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+HKExts.m"; sourceTree = "<group>"; };
+		AD0C48841C90558A0057DD48 /* MLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTransition.h; sourceTree = "<group>"; };
+		AD0C48851C90558A0057DD48 /* MLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTransition.m; sourceTree = "<group>"; };
+		AD0C48871C90575A0057DD48 /* HKCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKCollectionView.h; sourceTree = "<group>"; };
+		AD0C48881C90575A0057DD48 /* HKCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,7 @@
 		AD0C484F1C904A030057DD48 = {
 			isa = PBXGroup;
 			children = (
+				AD0C48721C904A300057DD48 /* HKNewsCard */,
 				AD0C485A1C904A030057DD48 /* HKNewsArch */,
 				AD0C48591C904A030057DD48 /* Products */,
 			);
@@ -64,7 +80,6 @@
 				AD0C48621C904A030057DD48 /* ViewController.m */,
 				AD0C48641C904A030057DD48 /* Main.storyboard */,
 				AD0C48671C904A030057DD48 /* Assets.xcassets */,
-				AD0C48691C904A030057DD48 /* LaunchScreen.storyboard */,
 				AD0C486C1C904A030057DD48 /* Info.plist */,
 				AD0C485B1C904A030057DD48 /* Supporting Files */,
 			);
@@ -77,6 +92,48 @@
 				AD0C485C1C904A030057DD48 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD0C48721C904A300057DD48 /* HKNewsCard */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C48731C904A690057DD48 /* HKNewsCardViewController.h */,
+				AD0C48741C904A690057DD48 /* HKNewsCardViewController.m */,
+				AD0C487D1C9052690057DD48 /* base */,
+				AD0C48761C904CEF0057DD48 /* models */,
+				AD0C48771C904CEF0057DD48 /* views */,
+			);
+			path = HKNewsCard;
+			sourceTree = "<group>";
+		};
+		AD0C48761C904CEF0057DD48 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		AD0C48771C904CEF0057DD48 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C48781C904D270057DD48 /* HKNewsCardCollectionViewCell.h */,
+				AD0C48791C904D270057DD48 /* HKNewsCardCollectionViewCell.m */,
+				AD0C487A1C904D270057DD48 /* HKNewsCardCollectionViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		AD0C487D1C9052690057DD48 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C48841C90558A0057DD48 /* MLTransition.h */,
+				AD0C48851C90558A0057DD48 /* MLTransition.m */,
+				AD0C48811C9054270057DD48 /* UIResponder+HKExts.h */,
+				AD0C48821C9054270057DD48 /* UIResponder+HKExts.m */,
+				AD0C48871C90575A0057DD48 /* HKCollectionView.h */,
+				AD0C48881C90575A0057DD48 /* HKCollectionView.m */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0C486B1C904A030057DD48 /* LaunchScreen.storyboard in Resources */,
+				AD0C487C1C904D270057DD48 /* HKNewsCardCollectionViewCell.xib in Resources */,
 				AD0C48681C904A030057DD48 /* Assets.xcassets in Resources */,
 				AD0C48661C904A030057DD48 /* Main.storyboard in Resources */,
 			);
@@ -150,8 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0C48631C904A030057DD48 /* ViewController.m in Sources */,
+				AD0C48831C9054270057DD48 /* UIResponder+HKExts.m in Sources */,
 				AD0C48601C904A030057DD48 /* AppDelegate.m in Sources */,
+				AD0C48751C904A690057DD48 /* HKNewsCardViewController.m in Sources */,
+				AD0C48861C90558A0057DD48 /* MLTransition.m in Sources */,
 				AD0C485D1C904A030057DD48 /* main.m in Sources */,
+				AD0C487B1C904D270057DD48 /* HKNewsCardCollectionViewCell.m in Sources */,
+				AD0C48891C90575A0057DD48 /* HKCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,14 +226,6 @@
 				AD0C48651C904A030057DD48 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AD0C48691C904A030057DD48 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD0C486A1C904A030057DD48 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HKNewsArch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhk.ios.HKNewsArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HKNewsArch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhk.ios.HKNewsArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";

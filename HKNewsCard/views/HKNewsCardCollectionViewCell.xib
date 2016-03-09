@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HKNewsCardCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="261"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="261"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rBs-t7-eV3">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="261"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="TAb-5K-ayC"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="Vff-KO-xSr"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rBs-t7-eV3" secondAttribute="trailing" id="796-kh-T8d"/>
+                <constraint firstAttribute="bottom" secondItem="rBs-t7-eV3" secondAttribute="bottom" id="HNL-d1-Yqz"/>
+                <constraint firstItem="rBs-t7-eV3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dMd-9R-bpI"/>
+                <constraint firstItem="rBs-t7-eV3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o7f-BQ-KWJ"/>
+            </constraints>
+            <size key="customSize" width="196" height="261"/>
+            <connections>
+                <outlet property="newsListTableView" destination="rBs-t7-eV3" id="lqi-7P-mVv"/>
+            </connections>
+            <point key="canvasLocation" x="426" y="234.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
