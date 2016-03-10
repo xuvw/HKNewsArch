@@ -9,6 +9,7 @@
 #import "HKNewsCardViewController.h"
 #import "HKNewsCardCollectionViewCell.h"
 #import "HKCollectionView.h"
+#import "MLTransition.h"
 
 @interface HKNewsCardViewController ()
 <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -80,8 +81,10 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (scrollView.contentOffset.x<=100) {
         scrollView.bounces = NO;
+        [self.navigationController enabledMLTransition:YES];
     }else{
         scrollView.bounces = YES;
+        [self.navigationController enabledMLTransition:NO];
     }
 }
 

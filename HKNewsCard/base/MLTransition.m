@@ -246,6 +246,19 @@ NSString * const k__MLTransition_GestureRecognizer = @"__MLTransition_GestureRec
         CGPoint translation = [recognizer translationInView:navVC.view];
         translation.x = translation.x==0?0.00001f:translation.x;
         NSLog(@"%f",translation.x);
+        CGFloat x = translation.x;
+        CGFloat y = translation.y;
+        if (x>=0 & y>=0) {
+            NSLog(@"右及右下");
+        }else if (x>=0 & y<=0) {
+            NSLog(@"右及右上");
+        }else if (x<=0 & y>=0) {
+            NSLog(@"左及左下");
+        }else if (x<=0 & y<=0) {
+            NSLog(@"左及左上");
+        }
+        
+        
 //        CGFloat ratio = (fabs(translation.y)/fabs(translation.x));
         //因为上滑的操作相对会比较频繁，所以角度限制少点
         if (translation.y>0||translation.y<0 || translation.x < 1.0f) {
